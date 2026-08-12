@@ -1,7 +1,7 @@
 import sys
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton
 
-APP_VERSION = "1.0.0"
+APP_VERSION = "1.0.3"
 
 class App(QWidget):
     def __init__(self):
@@ -13,7 +13,6 @@ class App(QWidget):
         self.setGeometry(100, 100, 360, 200)
 
         layout = QVBoxLayout()
-
         self.label = QLabel(f"<b>LMS Tracker Client</b><br>Version: {APP_VERSION}", self)
         layout.addWidget(self.label)
 
